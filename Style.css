@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #eee;
+}
+
+.board {
+    border-collapse: collapse;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #b88;
+}
+
+.board td {
+    width: 37.5px;
+    height: 37.5px;
+}
+
+/* Checkerboard colors */
+.board tr:nth-child(odd) td:nth-child(even),
+.board tr:nth-child(even) td:nth-child(odd) {
+    background: #000;
+}
+
+.board tr:nth-child(odd) td:nth-child(odd),
+.board tr:nth-child(even) td:nth-child(even) {
+    background: #fff;
+}
